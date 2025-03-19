@@ -12,4 +12,10 @@ import { FormsModule } from '@angular/forms';
 export class AppComponent {
   title = 'practice-Component-Interaction';
   pText:string= '';
+
+  receivedChildMessage:String = '';
+
+  receiveMessage(msg:String){
+    this.receivedChildMessage = msg;
+  }
 }
